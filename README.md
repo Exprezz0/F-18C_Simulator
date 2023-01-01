@@ -1,2 +1,5 @@
-# F-18_Simulation
-Based on OpenHornet design - Modified for Personal Use.
+# F/A-18C Simulator Cockpit
+Based on OpenHornet design (https://www.OpenHornet.com) - Modified for Personal Use.  
+
+# Disclaimer
+The files located within this repository have been created from scratch or modified from existing OpenHornet files and were adapated to suit my personal need based on available resources.   There may or may not be easier or more efficient ways to produce some of the systems/designs here, but for the purpose of learning and gaining experience designing, I've decided to take the hard way.  
