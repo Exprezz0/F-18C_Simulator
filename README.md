@@ -20,34 +20,43 @@ The files located within this repository have been created from scratch or modif
 
 The MCAD folder contains all .STL, .SVG, .DXF files types for all mechanical manufacturing.  Within the MCAD folder are the 5 Major Assesmbly Groups: 
 
-`*   MCAD
+```c
+* MCAD
      * ASSY, UPPER INSTRUMENT PANEL
      * ASSY, LOWER INSTRUMENT PANEL
      * ASSY, CENTER TUB
      * ASSY, LEFT CONSOLE
      * ASSY, RIGHT CONSOLE
-`
-    1:  Sub-assemblies for each major group will be broken down into their own individual folders.  Files organic to that sub-assembly will be located in one of several child folders based on the material they are comprised of.  (Resin, PETG, MDF, Acrylic).
+```
+
+ Sub-assemblies for each major group will be broken down into their own individual folders.  Files organic to that sub-assembly will be located in one of several child folders based on the material they are comprised of.  (Resin, PETG, MDF, Acrylic).
     
-    2:  Each major assembly will also have a "ALL PANEL PLATES", which includes the Backlight Plate, Light Plate, and Legend Plate
+Additionally, each major assembly will also have:
+   1. "**ALL PANEL PLATES**" folder; includes the *Backlight Plate, Light Plate*, and *Legend Plate* folders associated with that major assembly
+
+   2. "**ALL KNOBS**" folder; includes all knobs associated with that major assembly.
+
+   3. "**RANDOM COTS PARTS**" folder; includes any COTS that could be resin printed or manufactured without having to order or purchase.  Examples include gears, bearings, spacers....
+
+   4. "**OBSOLETE**" folder; contains files that are outdated or no longer belong to the OH project.
 
     * ASSY, RIGHT CONSOLE
-        * OH5A2A1-1 - ASSY, HOOK LEVER & INDICATOR
+        * ALL PANEL PLATES
+        * ALL KNOBS
+        * OBSOLETE
+        * RANDOM COTS PARTS
         * OH5A2A2-1 - ASSY, WING FOLD HANDLE
+        * OH5A2A1-1 - ASSY, HOOK LEVER & INDICATOR
         * OH5A1A1-1 - ASSY, RIGHT CONSOLE STRUCTURE
-			* **Name_of_PCB**
-			   * Manufacturing Files
-			      * ***Name_of_PCB_&Ver*.zip**
-			      * ***Name_of_PCB_&Ver*_BOM.xlsx**
-				  * ***Name_of_PCB_&Ver*_top-pos.csv**
-				  * ***Name_of_PCB_&Ver*_bottom-pos.csv**
-			   * *A bunch of KiCAD files*
-			* **Name_of_PCB**
-			* **Name_of_PCB**
-			* **Name_of_PCB**
-	    * Backlighting_Type B [https://github.com/jrsteensen/OpenHornet/issues/463]
-	    * Functional
-     * Specialty
-*  DOCs
-*  Interconnects
-*  Lib
+            * ACRYLIC
+            * MDF
+            * PETG
+         
+Lastly, each material folder will be broken down into size for reference.  If a part/object is suppose to be printed in PETG or ABS, and you can't find it, try looking in another material folder.  Sometimes I prefered resin printing or using acrylic to the defaulted PETG.
+
+
+# ECAD Directory
+
+The ECAD folder is set up similar to the MCAD directory (in this repository, and almost as identical to the official OpenHornet repository) and navigating it should be just as easy.  
+
+As of right now, all of the backlit panels have been transitioned to KiCad 6, the libraries associated with the files are consolidated and reorganized, and new manufacturing files that includes TOP and BOTTOM Bill of Materials (BOM) have been created to facilitate easier ordering from JLCPCB.com.
