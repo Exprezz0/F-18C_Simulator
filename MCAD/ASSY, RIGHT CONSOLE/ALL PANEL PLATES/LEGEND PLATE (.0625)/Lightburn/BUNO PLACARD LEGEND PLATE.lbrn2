@@ -32,6 +32,7 @@
         <speed Value="33.3333"/>
         <dotSpacing Value="0"/>
         <priority Value="0"/>
+        <doOutput Value="0"/>
         <tabCount Value="1"/>
         <tabCountMax Value="1"/>
         <tabSpacing Value="50.04"/>
@@ -39,7 +40,7 @@
     <CutSetting type="Scan">
         <index Value="16"/>
         <name Value="C16"/>
-        <maxPower Value="30"/>
+        <maxPower Value="20"/>
         <maxPower2 Value="20"/>
         <speed Value="38.3333"/>
         <dotSpacing Value="0"/>
@@ -48,9 +49,8 @@
         <overscan Value="0"/>
         <overscanPercent Value="1"/>
         <floodFill Value="1"/>
-        <interval Value="0.03"/>
+        <interval Value="0.02"/>
         <priority Value="1"/>
-        <doOutput Value="0"/>
         <tabCount Value="1"/>
         <tabCountMax Value="1"/>
     </CutSetting>
