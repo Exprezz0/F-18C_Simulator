@@ -6,7 +6,7 @@
 
 # **ECAD DIRECTORY INFORMATION**
 
-The purpose of this ReadMe is to help enable the end-user to successfully accomplish a few things.  First, to facilitate navigatation of the file structure. as well as provide clarification regarding the manufacturing process of PCB's related to OpenHornet.  The manufacturing files for each PCB has have been formatted for use with PCB Manufacturer - JLCPCB @ (https://jlcpcb.com). 
+The purpose of this guide is to help enable the end-user to successfully accomplish the following:  Facilitate navigatation of the file structure, add in the installation of KiCad and setting up libraries associated with OpenHornet, and provide clarification regarding the manufacturing process of PCB's related to OpenHornet.  The manufacturing files for each PCB has have been formatted for use with PCB Manufacturer - JLC @ (https://jlcpcb.com). 
 
  _Note:  If choosing a different PCB Manufacturer, make sure to research their formatting standards and modify the necessary manufacturing files accordingly._
 
