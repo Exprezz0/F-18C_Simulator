@@ -1,0 +1,778 @@
+185520802741540
+OH_Footprints
+0.5mm-NPTH-Drill
+
+
+0
+0
+0
+OH_Footprints
+1pin_Nano
+module 1 pin (ou trou mecanique de percage)
+DEV
+0
+1
+1
+OH_Footprints
+4MM_Stencil_Hole
+
+
+0
+0
+0
+OH_Footprints
+100SP1_Toggle_Silkscreen
+
+
+0
+0
+0
+OH_Footprints
+100SP3_Toggle_Silkscreen
+
+
+0
+0
+0
+OH_Footprints
+100SPX_Toggle_13mm_x_18mm
+
+
+0
+0
+0
+OH_Footprints
+631H_Toggle_13mm_x_13mm
+
+
+0
+0
+0
+OH_Footprints
+631H_Toggle_Silkscreen
+
+
+0
+0
+0
+OH_Footprints
+AB2_SO24_W
+
+
+0
+24
+24
+OH_Footprints
+Arduino_Mini_Pro
+
+
+0
+34
+34
+OH_Footprints
+Arduino_Mini_Pro_No_Programming_Header
+
+
+0
+28
+28
+OH_Footprints
+BLANK_SYMBOL_NOT_FOR_ROUTING
+
+
+0
+0
+0
+OH_Footprints
+BR10K_Pot_11mm_x_11mm
+
+
+0
+0
+0
+OH_Footprints
+BR10K_Pot_Silkscreen
+
+
+0
+0
+0
+OH_Footprints
+Bourns_3310Y
+
+
+0
+3
+3
+OH_Footprints
+CC-BY-NC-SA
+
+
+0
+0
+0
+OH_Footprints
+CC-BY-NC-SA-Small
+
+
+0
+0
+0
+OH_Footprints
+CC-BY-NC-SA_LOGO
+
+
+0
+0
+0
+OH_Footprints
+CP_Elec_8x10
+SMD capacitor, aluminum electrolytic, Nichicon, 8.0x10mm
+capacitor electrolytic
+0
+2
+2
+OH_Footprints
+C_0603_1608Metric
+Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
+capacitor
+0
+2
+2
+OH_Footprints
+C_0805_2012Metric
+Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator
+capacitor; LCSC# C49678
+0
+2
+2
+OH_Footprints
+C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator
+capacitor handsolder
+0
+2
+2
+OH_Footprints
+C_1206_3216Metric
+Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
+capacitor
+0
+2
+2
+OH_Footprints
+DIP-24_W15.24mm_Socket
+24-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), Socket
+THT DIP DIL PDIP 2.54mm 15.24mm 600mil Socket; LCSC# C72120
+0
+24
+24
+OH_Footprints
+JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical
+JST PH series connector, B2B-PH-K (http://www.jst-mfg.com/product/pdf/eng/ePH.pdf), generated with kicad-footprint-generator
+connector JST PH side entry
+0
+2
+2
+OH_Footprints
+JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical
+JST PH series connector, B3B-PH-K (http://www.jst-mfg.com/product/pdf/eng/ePH.pdf), generated with kicad-footprint-generator
+connector JST PH side entry
+0
+3
+3
+OH_Footprints
+JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical
+JST PH series connector, B4B-PH-K (http://www.jst-mfg.com/product/pdf/eng/ePH.pdf), generated with kicad-footprint-generator
+connector JST PH side entry
+0
+4
+4
+OH_Footprints
+JST_PH_B5B-PH-K_1x05_P2.00mm_Vertical
+JST PH series connector, B5B-PH-K (http://www.jst-mfg.com/product/pdf/eng/ePH.pdf), generated with kicad-footprint-generator
+connector JST PH side entry
+0
+5
+5
+OH_Footprints
+JST_PH_S5B-PH-K_1x05_P2.00mm_Horizontal
+JST PH series connector, S5B-PH-K (http://www.jst-mfg.com/product/pdf/eng/ePH.pdf), generated with kicad-footprint-generator
+connector JST PH top entry
+0
+5
+5
+OH_Footprints
+JST_PH_S6B-PH-K_1x06_P2.00mm_Horizontal
+JST PH series connector, S6B-PH-K (http://www.jst-mfg.com/product/pdf/eng/ePH.pdf), generated with kicad-footprint-generator
+connector JST PH top entry
+0
+6
+6
+OH_Footprints
+LED_0402_1005Metric
+LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+LED
+0
+2
+2
+OH_Footprints
+LED_D3.0mm
+LED, diameter 3.0mm, 2 pins
+LED diameter 3.0mm 2 pins
+0
+2
+2
+OH_Footprints
+LED_WS2812B-MINI_PLCC4_3.5x3.5mm_P1.75mm
+Addressable RGB LED NeoPixel Mini, 12 mA, http://www.world-semi.com/DownLoadFile/112
+LED RGB NeoPixel Mini
+0
+4
+4
+OH_Footprints
+LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm
+https://datasheet.lcsc.com/lcsc/2106062036_Worldsemi-WS2812B-B-W_C2761795.pdf
+LED RGB NeoPixel
+0
+4
+4
+OH_Footprints
+LTP-305G
+https://media.digikey.com/pdf/Data%20Sheets/Lite-On%20PDFs/LTP-305G.pdf
+5 X 7 LED Matrix LTP-305G Green
+0
+14
+14
+OH_Footprints
+MAX6953
+https://datasheets.maximintegrated.com/en/ds/MAX6953.pdf
+2-Wire Interfaced, 2.7V to 5.5V, 4-Digit 5 ✕ 7 Matrix LED Display Driver
+0
+36
+36
+OH_Footprints
+MAX7219CWG&plus_
+
+
+0
+72
+24
+OH_Footprints
+MRY106_RotarySW
+
+
+0
+0
+0
+OH_Footprints
+Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical
+Molex KK-254 Interconnect System, old/engineering part number: AE-6410-02A example for new part number: 22-27-2021, 2 Pins (http://www.molex.com/pdm_docs/sd/022272021_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-254 vertical
+0
+2
+2
+OH_Footprints
+Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical
+Molex KK-254 Interconnect System, old/engineering part number: AE-6410-03A example for new part number: 22-27-2031, 3 Pins (http://www.molex.com/pdm_docs/sd/022272021_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-254 vertical
+0
+3
+3
+OH_Footprints
+Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical
+Molex KK-254 Interconnect System, old/engineering part number: AE-6410-04A example for new part number: 22-27-2041, 4 Pins (http://www.molex.com/pdm_docs/sd/022272021_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-254 vertical
+0
+4
+4
+OH_Footprints
+Molex_KK-254_AE-6410-06A_1x06_P2.54mm_Vertical
+Molex KK-254 Interconnect System, old/engineering part number: AE-6410-06A example for new part number: 22-27-2061, 6 Pins (http://www.molex.com/pdm_docs/sd/022272021_sd.pdf), generated with kicad-footprint-generator
+connector Molex KK-254 vertical
+0
+6
+6
+OH_Footprints
+Molex_Mini-Fit_Jr_5566-04A_2x02_P4.20mm_Vertical
+Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5566-04A, example for new mpn: 39-28-x04x, 2 Pins per row, Mounting:  (http://www.molex.com/pdm_docs/sd/039281043_sd.pdf), generated with kicad-footprint-generator
+connector Molex Mini-Fit_Jr side entry
+0
+4
+4
+OH_Footprints
+Molex_Mini-Fit_Jr_5566-06A2_2x03_P4.20mm_Vertical
+Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5566-06A2, example for new mpn: 39-28-906x, 3 Pins per row, Mounting: Snap-in Plastic Peg PCB Lock (http://www.molex.com/pdm_docs/sd/039289068_sd.pdf), generated with kicad-footprint-generator
+connector Molex Mini-Fit_Jr side entryplastic_peg
+0
+6
+6
+OH_Footprints
+Molex_Mini-Fit_Jr_5569-06A1_2x03_P4.20mm_Horizontal
+Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5569-06A1, example for new mpn: 39-29-4069, 3 Pins per row, Mounting: PCB Mounting Flange (http://www.molex.com/pdm_docs/sd/039291047_sd.pdf), generated with kicad-footprint-generator
+connector Molex Mini-Fit_Jr top entryscrew_flange
+0
+6
+6
+OH_Footprints
+MountingHole_1.5mm
+Mounting Hole 1.5mm, no annular
+mounting hole 1.5mm no annular
+0
+0
+0
+OH_Footprints
+Mouting_Hole_1.85mm
+
+
+0
+1
+1
+OH_Footprints
+Mouting_Hole_2.71mm
+
+
+0
+1
+1
+OH_Footprints
+OH_LOGO_37.7mm_5.9mm
+
+
+0
+0
+0
+OH_Footprints
+OH_LOGO_75.4mm_11.9mm
+
+
+0
+0
+0
+OH_Footprints
+OH_LOGO_LARGE
+
+
+0
+0
+0
+OH_Footprints
+OH_LOGO_NO_TEXT_11mm_5.9mm
+
+
+0
+0
+0
+OH_Footprints
+OH_LOGO_ONLY_11x6mm
+
+
+0
+0
+0
+OH_Footprints
+OH_LOGO_ONLY_22mm_12mm
+
+
+0
+0
+0
+OH_Footprints
+OH_Panel_6-32_PHS
+
+
+0
+0
+0
+OH_Footprints
+OPB61x
+
+
+0
+5
+5
+OH_Footprints
+OPT_DISP_NPTH_0.6x0.9mm
+
+
+0
+0
+0
+OH_Footprints
+OPT_DISP_NPTH_0.6x0.9mmx3
+
+
+0
+0
+0
+OH_Footprints
+PEC11R-4xxxF-Nxxxx
+PEC11R Rotary Encoder, No Switch
+PEC11R Rotary Encoder
+0
+3
+3
+OH_Footprints
+PinHeader_1x06_P2.54mm_Vertical
+Through hole straight pin header, 1x06, 2.54mm pitch, single row
+Through hole pin header THT 1x06 2.54mm single row
+0
+6
+6
+OH_Footprints
+PinHeader_2x02_P2.54mm_Vertical
+Through hole straight pin header, 2x02, 2.54mm pitch, double rows
+Through hole pin header THT 2x02 2.54mm double row
+0
+4
+4
+OH_Footprints
+PinHeader_2x06_P2.54mm_Vertical
+Through hole straight pin header, 2x06, 2.54mm pitch, double rows
+Through hole pin header THT 2x06 2.54mm double row
+0
+12
+12
+OH_Footprints
+ProMicro
+Pro Micro footprint
+promicro ProMicro
+0
+24
+24
+OH_Footprints
+ProMicro-EnforcedTop
+Pro Micro footprint
+promicro ProMicro
+0
+24
+24
+OH_Footprints
+ProMicro-NoSilk
+Pro Micro footprint
+promicro ProMicro
+0
+24
+24
+OH_Footprints
+RKJXM10
+
+
+0
+9
+9
+OH_Footprints
+RKJXV12
+
+
+0
+14
+11
+OH_Footprints
+R_0402_1005Metric
+Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
+resistor
+0
+2
+2
+OH_Footprints
+R_0603_1608Metric
+Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
+resistor
+0
+2
+2
+OH_Footprints
+R_0603_1608Metric_Pad0.98x0.95mm_HandSolder
+Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
+resistor handsolder
+0
+2
+2
+OH_Footprints
+R_0805_2012Metric
+Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
+resistor
+0
+2
+2
+OH_Footprints
+S2AL_Toggle_Silkscreen
+
+
+0
+0
+0
+OH_Footprints
+S2_MINI
+
+
+0
+34
+33
+OH_Footprints
+S3AL_Toggle_Silkscreen
+
+
+0
+0
+0
+OH_Footprints
+SCRATCHPADBACKLIGHT
+TekCreations F18 Hornet UFC ScratchPad Backlight
+
+0
+2
+2
+OH_Footprints
+SCRATCHPADLCD
+TekCreations F18 Hornet UFC ScratchPad LCD
+
+0
+26
+26
+OH_Footprints
+SMD-SW-4_5.1x5.1
+TS-1187A, 5.1x5.1 SMD Tactile Switches, https://datasheet.lcsc.com/lcsc/1811071221_E-Switch-TL1240BQ1JCLR_C273511.pdf ; 
+
+0
+4
+4
+OH_Footprints
+SOIC-8_3.9x4.9mm_P1.27mm
+SOIC, 8 Pin (JEDEC MS-012AA, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_8.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOIC SO
+0
+8
+8
+OH_Footprints
+SOP-28_7.5x17.9x1.27P
+
+SOP 28
+0
+28
+28
+OH_Footprints
+SOT-23
+SOT, 3 Pin (https://www.jedec.org/system/files/docs/to-236h.pdf variant AB), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOT TO_SOT_SMD
+0
+3
+3
+OH_Footprints
+SSOP-36
+
+
+0
+36
+36
+OH_Footprints
+SWITCH_SNAP_DOME_6.3mm_DIA_SINGLE_SIDE_PCB
+
+
+0
+2
+2
+OH_Footprints
+SWITCH_SNAP_DOME_6.3mm_DIA_SINGLE_SIDE_PCB_mirror
+
+
+0
+2
+2
+OH_Footprints
+SW_TH_Tactile_Omron_B3F-10xx
+SW_TH_Tactile_Omron_B3F-10xx_https://www.omron.com/ecb/products/pdf/en-b3f.pdf
+Omron B3F-10xx
+0
+4
+4
+OH_Footprints
+Socket_Strip_Arduino_1x15
+Through hole socket strip
+socket strip
+0
+15
+15
+OH_Footprints
+SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm
+SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, open
+solder jumper open
+0
+2
+2
+OH_Footprints
+SolderWirePad_1x01_SMD_2x4mm
+Wire Pad, Square, SMD Pad,  5mm x 10mm,
+MesurementPoint Square SMDPad 5mmx10mm 
+0
+1
+1
+OH_Footprints
+SolderWirePad_1x01_SMD_3x5mm
+Wire Pad, Square, SMD Pad,  5mm x 10mm,
+MesurementPoint Square SMDPad 5mmx10mm 
+0
+1
+1
+OH_Footprints
+SxAL_Toggle_13x13mm
+
+
+0
+0
+0
+OH_Footprints
+SxAL_Toggle_Silkscreen
+
+
+0
+0
+0
+OH_Footprints
+TL1240GQ
+https://www.omron.com/ecb/products/pdf/en-b3f.pdf
+tact sw push 6mm
+0
+6
+4
+OH_Footprints
+TL1240GQ_old
+https://www.omron.com/ecb/products/pdf/en-b3f.pdf
+tact sw push 6mm
+0
+6
+4
+OH_Footprints
+TL3315NF250Q
+
+
+0
+4
+4
+OH_Footprints
+TO-220-3_Vertical
+TO-220-3, Vertical, RM 2.54mm, see https://www.vishay.com/docs/66542/to-220-1.pdf
+TO-220-3 Vertical RM 2.54mm
+0
+3
+3
+OH_Footprints
+TSSOP-16_4.4x5mm_P0.65mm
+TSSOP, 16 Pin (JEDEC MO-153 Var AB https://www.jedec.org/document_search?search_api_views_fulltext=MO-153), generated with kicad-footprint-generator ipc_gullwing_generator.py
+TSSOP SO
+0
+16
+16
+OH_Footprints
+TSSOP-24_4.4x7.8mm_P0.65mm
+TSSOP, 24 Pin (JEDEC MO-153 Var AD https://www.jedec.org/document_search?search_api_views_fulltext=MO-153), generated with kicad-footprint-generator ipc_gullwing_generator.py
+TSSOP SO
+0
+24
+24
+OH_Footprints
+UFCOptionDigit
+TekCreations OPT Module Display
+
+0
+21
+21
+OH_Footprints
+UFCSingleDigit
+TekCreations COMM Module Display
+
+0
+8
+8
+OH_Footprints
+VID29-02
+
+
+0
+4
+4
+OH_Footprints
+VID60-02
+
+
+0
+6
+6
+OH_Footprints
+WS2812-2020
+
+
+0
+4
+4
+OH_Footprints
+X40_dual_needle_microstepper
+
+
+0
+0
+0
+OH_Footprints
+kicad
+
+
+0
+1
+1
+OH_Footprints
+mouse-bite-3mm-slot
+
+
+0
+0
+0
+OH_Footprints
+mouse-bite-3mm-slot-3way
+
+
+0
+0
+0
+OH_Footprints
+mouse-bite-3mm-slot-3way-internal
+
+
+0
+0
+0
+OH_Footprints
+mouse-bite-3mm-slot-4way
+
+
+0
+0
+0
+OH_Footprints
+mouse-bite-3mm-slot-corner
+
+
+0
+0
+0
+OH_Footprints
+mouse-bite-3mm-slot-intersection
+
+
+0
+0
+0
+OH_Footprints
+via0.6
+
+
+0
+1
+1
+OH_Footprints
+x40_8798
+dual needle microstepper gauge
+dual needle microstepper gauge
+0
+8
+8
