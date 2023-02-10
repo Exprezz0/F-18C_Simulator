@@ -23,9 +23,9 @@ The ECAD Directory has been organized to facilitate the end user, regardless of 
 
 
 **The structure of the ECAD Directory is summarized below:**
-![ECADDirectory](https://user-images.githubusercontent.com/81926396/215696481-c1575aac-79ee-43bc-b3f3-3472d725cc1d.png)
+![ECADDirectory](https://user-images.githubusercontent.com/81926396/217284277-7f479eaf-b9f7-42d4-a8a4-4733d370fc17.png)
 
-![Example](https://user-images.githubusercontent.com/81926396/215696071-7edc249b-18df-4af8-915c-aca4d49060c1.png)
+![Example](https://user-images.githubusercontent.com/81926396/217283734-52928723-9077-4cdb-a5c9-113301aa7033.png)
 
 
 1. Within each labeled PCB folder, there will be a folder called "JLCPCB" and inside of that folder will be two additional folders called "gerbers" and "production_files"
