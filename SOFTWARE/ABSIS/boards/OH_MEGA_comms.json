@@ -1,0 +1,43 @@
+  {
+    "build": {
+      "core": "arduino",
+      "extra_flags": "-DARDUINO_AVR_MEGA2560",
+      "f_cpu": "16000000L",
+      "hwids": [
+        [
+          "0x2341",
+          "0x0042"
+        ]
+      ],
+      "mcu": "atmega2560",
+      "usb_product": "COMMS Panel",
+      "variant": "mega"
+    },
+    "bootloader": {
+      "efuse": "0xFD",
+      "file": "stk500v2/stk500boot_v2_mega2560.hex",
+      "hfuse": "0xD8",
+      "lock_bits": "0x0F",
+      "lfuse": "0xFF",
+      "unlock_bits": "0x3F"
+    },
+    "debug": {
+      "simavr_target": "atmega2560",
+      "avr-stub": {
+        "speed": 115200
+      }
+    },
+    "frameworks": [
+      "arduino"
+    ],
+    "name": "Arduino Mega or Mega 2560 ATmega2560 (Mega 2560)",
+    "upload": {
+      "maximum_ram_size": 8192,
+      "maximum_size": 253952,
+      "protocol": "wiring",
+      "require_upload_port": true,
+      "speed": 115200
+    },
+    "url": "https://www.arduino.cc/en/Main/ArduinoBoardMega2560",
+    "vendor": "Arduino"
+  }
