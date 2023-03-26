@@ -7,9 +7,9 @@
 ###                https://openhornet.com/               ###
 ###            PCB Bill of Materials Compiler            ###
 ###                                                      ###
-### Version: 1.0.1                                       ###
+### Version: 1.0.3                                       ###
 ### Created: 1/29/2023                                   ###
-### Updated: 3/04/2023                                   ###
+### Updated: 3/19/2023                                   ###
 ### Author:  Exprezzo                                    ###
 ### License: CC BY-NC-SA 4.0                             ###
 ### Discord: https://discord.gg/JBUYucgyjq               ###
@@ -39,12 +39,13 @@ try:
     with open('docs/OH_PCB Database.xlsx', 'r') as f:
         print(f'OH_PCB Database.xlsx is present.  Database will be updated.')
         df_components = pd.read_excel('docs/OH_PCB Database.xlsx', sheet_name='Components')
-        df_pcbqty = pd.read_excel('docs/OH_PCB Database.xlsx', sheet_name='PCBs Required', header=1, names=['PCB', 'Quantity'])
+        df_pcbqty = pd.read_excel('docs/OH_PCB Database.xlsx', sheet_name='PCBs Required', names=['PCB', 'Quantity'])
         conn = sqlite3.connect('docs/OH_PCB Database.db')
-        df_components.to_sql('OHPartsTable', conn, if_exists='replace')
+        df_components.to_sql('Component Database', conn, if_exists='replace')
+        df_pcbqty.to_sql('Component Database', conn, if_exists='replace')
         conn.close()
 except FileNotFoundError:
-    print(f'File Not Found.  Database will NOT be updated')
+    print(f'OH_PCB Database.xlsx not found.  Database will NOT be updated')
 
 # Create empty dataframes to hold the combined data from BOM.CSV
 df_master_top = pd.DataFrame()
@@ -60,16 +61,21 @@ for dirpath, dirnames, filenames in os.walk(base_dir):
             df_localdata_top = pd.read_csv(os.path.join(dirpath, file))                           # Read data from CSV to the dataframe
             df_localdata_top['PCB Name'] = file                                                   # Create and Add the file name as a column in the dataframe
             pcb_type = file.split('-')[1].split('.')[0]                                           # Read the required number of copies for this PCB type from the PCB Required Quantity sheet
-            copies = df_pcbqty.loc[df_pcbqty['PCB'] == pcb_type, 'Quantity'].iloc[0]
-            for i, row in df_localdata_top.iterrows():                                            # Iterate through the BOM and multiply the quantity of each component by the appropriate factor
-                df_localdata_top.at[i, 'Quantity'] *= copies
+           # if not df_pcbqty.empty and pcb_type in df_pcbqty['PCB'].values:
+            #    copies = df_pcbqty.loc[df_pcbqty['PCB'] == pcb_type, 'Quantity'].iloc[0]
+            #else:
+            #    copies = 1
+            #for i, row in df_localdata_top.iterrows():                                            # Iterate through the BOM and multiply the quantity of each component by the appropriate factor
+            #   df_localdata_top.at[i, 'Quantity'] *= copies
             df_master_top = pd.concat([df_master_top, df_localdata_top], ignore_index=True)       # Append the local data df to the master_top dataframe
-
         if file.startswith('BOM_BOTTOM') and file.endswith('.csv'):                               # Same thing for BOM_BOTTOM.csv
             df_localdata_bottom = pd.read_csv(os.path.join(dirpath, file))
             df_localdata_bottom['PCB Name'] = file
             pcb_type = file.split('-')[1].split('.')[0]                                           
-            copies = df_pcbqty.loc[df_pcbqty['PCB'] == pcb_type, 'Quantity'].iloc[0]
+            if not df_pcbqty.empty and pcb_type in df_pcbqty['PCB'].values:
+                copies = df_pcbqty.loc[df_pcbqty['PCB'] == pcb_type, 'Quantity'].iloc[0]
+            else:
+                copies = 1
             for i, row in df_localdata_bottom.iterrows():
                 df_localdata_bottom.at[i, 'Quantity'] *= copies
             df_master_bottom = pd.concat([df_master_bottom, df_localdata_bottom], ignore_index=True)
@@ -79,7 +85,7 @@ for dirpath, dirnames, filenames in os.walk(base_dir):
 # Clean up the dataframe by grouping the rows by part number before writing it to an excel file.  Removed excess and duplicate words. but...
 # Combines the designators of alike "Part Numbers."  Seemed to be an easy and accurate way to count the quantity required for each component.
 df_master_BOM = pd.concat([df_master_top, df_master_bottom])
-#df_master_BOM.drop(columns=['PCB Name'], axis=1, inplace=True)
+df_master_BOM.drop(columns=['PCB Name'], axis=1, inplace=True)
 df_master_BOM['Part Number'] = df_master_BOM['LCSC'].where(df_master_BOM['LCSC'].notna(), df_master_BOM['Footprint'])
 df_master_BOM = df_master_BOM.groupby('Part Number').agg(Value=("Comment", "first"), Designator=("Designator", ",".join), Footprint=("Footprint", "first"))
 df_master_BOM['Designator'] = df_master_BOM['Designator'].str.replace(",", ", ")
@@ -110,7 +116,7 @@ with pd.ExcelWriter(excel_file) as writer:
 # Query SQL Database and read the database and excel sheet into Dataframes.  *Remember that DataFrames and Database are two separate...events!!!*
 conn = sqlite3.connect('docs/OH_PCB Database.db')
 cursor = conn.cursor()
-cursor.execute('SELECT * FROM OHPartsTable')
+cursor.execute('SELECT * FROM Component Database')
 data = cursor.fetchall()
 
 df_sqldata = pd.DataFrame(data, columns=[i[0] for i in cursor.description])
@@ -155,3 +161,12 @@ with pd.ExcelWriter(excel_file) as writer:
 
 # Read the database to see how many of each PCB are required, then multiple the components by the number of PCBs needed.  For excample: 22x ABSIS_ALE are required, but the master BOM
 # only accounts for 1x ABSIS_ALE in terms of components.  So all of the components that are needed to make 1x ABSIS_ALE need to be multipled by the total number of PCBs required.
+
+
+#Here's a brief overview of my situation: 
+
+#I'm trying to create a master Bill of Materials that consolidates the Bill of Materials for the top layer and bottom layer of any given PCB.  For example, I have a PCB called "ABSIS_ALE" which has two BOMs; one for the top layer and one for the bottom layer.  Both of those BOMs contain enough components to manufacture one ABSIS_ALE PCB.  
+
+#Now, I have approximately 40 different PCBs that are located within different folders throughout a file structure.  There are a few different PCBs that I need multiple copies of.  For example, I need 22 "ABSIS_ALE" PCBs to completely my project.  I have an excel spreadsheet that shows the quantity of each PCB required.  But I'm trying to consolidate all of the components based on each individual BOM into one master BOM and ensure that the total number of components needed is properly reflected based on the total amount of PCBs required.
+
+#My PCBs are located in multiple folders inside of "ECAD/PCBs" so I would need to search through multiple structures to find all of the BOMs.  Additionally, the Top BOMs are named "BOM_TOP-[name of pcb].csv" beginning with "BOM_TOP-" followed by the name of the PCB and ending with .csv.  The bottom BOMs for each PCB are named the same with except they start with "BOM_BOTTOM-"
