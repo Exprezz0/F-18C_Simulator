@@ -45,8 +45,8 @@
                 "ARDUINO_ARCH_AVR",
                 "ARDUINO=10808",
                 "USB_VID=0x1B4F",
-                "USB_PID=0x9208",
-                "USB_PRODUCT=\"EXT LT Panel\"",
+                "USB_PID=0x9251",
+                "USB_PRODUCT=\"OH1_OBOGS Panel\"",
                 "USB_MANUFACTURER=\"SparkFun\"",
                 "__AVR_ATmega32U4__",
                 ""

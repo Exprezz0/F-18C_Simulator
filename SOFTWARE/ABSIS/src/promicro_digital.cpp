@@ -2,7 +2,7 @@
 #include <Joystick.h>
 
 Joystick_ Joystick(JOYSTICK_DEFAULT_REPORT_ID, JOYSTICK_TYPE_GAMEPAD,
-                   16, 0,
+                   15, 0,
                    false, false, false,
                    false, false, false,
                    false, false,

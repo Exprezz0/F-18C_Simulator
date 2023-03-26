@@ -10,7 +10,7 @@
         ]
       ],
       "mcu": "atmega2560",
-      "usb_product": "COMMS Panel",
+      "usb_product": "Left Console",
       "variant": "mega"
     },
     "bootloader": {
